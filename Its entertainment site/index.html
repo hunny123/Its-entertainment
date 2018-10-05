@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Entertainment</title>
+
+	<link rel="icon" href="./images/icon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style >
+.cf{
+	background:url('./images/backgr2341.png');
+  background-size: cover;
+	height: 670px;
+  background-position:20%;
+	background-repeat: no-repeat;
+  padding:0px;
+  margin:0;
+
+
+}
+.hero{
+  background-color:transparent;
+  padding-bottom:15% ;
+   
+}
+.service{
+  background:#7D13A8;
+
+  margin-top:-1%;
+  }
+.pad{  
+  padding-bottom:15% ;
+  padding-top:5% ;
+  border-radius: 5px;
+}
+.video{
+  background-image: url('./images/backg143.png');
+  background-size:cover; 
+ background-position:39% 10%;
+  background-repeat: no-repeat;
+}
+.custom{
+  border:none;
+  border-radius:5px;
+  -webkit-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
+   -moz-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
+   box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.5);
+   
+}
+.custom:hover{
+  box-shadow:none;
+
+}
+.video-area{
+  
+  background:red;
+  align-items:center;
+}
+.m-p{
+  margin-top:2%;
+}
+.m-n{
+  margin-top:2%;
+}
+@media screen and (min-width: 768px) {
+    .m-p {
+         margin-top:30%;
+    }
+    .m-n{
+      margin-top:-28%;
+    }
+}
+</style>
+    
+
+</head>
+<body>
+<div class="container-fluid cf">	
+<nav class="navbar navbar-expand-md fixed-top nav-setting">
+  <!-- Brand -->
+  <a class="navbar-brand ml-4" href="about.html"><img class="animated infinite pulse" src="./images/logo.png" alt="Logo" style="width:80px;height:50px"></a>
+
+  <button class="navbar-toggler p-4" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    
+  </button>
+  <div class="collapse   navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav ml-auto  ">
+    <li class="nav-item pr-3">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item pr-3">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-item pr-3">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item pr-3 dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Menu
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="Movies.html">Movies</a>
+        <a class="dropdown-item" href="Music.html">Music</a>
+        <a class="dropdown-item" href="Videos.html">Videos</a>
+        <a class="dropdown-item" href="Game.Html">Game</a>
+        <a class="dropdown-item" href="More.html">More</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+ </nav>
+ <!--copy till here -->
+<div class="jumbotron hero ">
+  <div class="row pt-5">
+    <div class="col-sm-6  col-back"><div class="header1"><h1 class="text-white h-responsive  p-2"> It's Entertainment...</h1>
+    </div></div>
+    <div class="col-sm-6 "><div class="backy "><img  class="img-fluid  pt-2 "src="./images/logo.png" width="350"></div></div>
+	
+	
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="pad service">
+  <div class=""><h2 class="text-center text-white "> Services</h2>
+  </div>
+  <div class="row mt-3 pt-2">
+    <div class="col-sm-3 mt-2 "><center><img src="./images/watch.png"><h4 class="text-white mt-1">Watch the Hd Videos</h4></center></div>
+      <div class="col-sm-3 mt-2 "><center><img src="./images/music.png"><h4 class="text-white mt-1">Listen great Music</h4></center></div>
+        <div class="col-sm-3 mt-2 "><center><img src="./images/game.png" width="128"><h4 class="text-white mt-1">Play cool games</h4></center></div>
+          <div class="col-sm-3 mt-2"><center><img src="./images/download.png"width="128"><h4 class="text-white mt-1">Download what you like</h4></center></div>
+</div></div> 
+<div class=" pad video pt-4 mt-2">
+  <h2 class="text-center text-purple"> Latest Videos</h2>
+  <div class="container  px-1">
+  <div class="row pt-2">
+    <div class="col-md-6  px-1 mt-2">
+<center>
+     <div class="card custom" id="c1" style="width:80%">
+      <div class="video-area">
+
+<!--slider-->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="video-item1  bg-dark text-white pt-5 pb-5"><h1>4</h1></div>
+    </div>
+    <div class="carousel-item">
+     <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>3</h1></div>
+    </div>
+    <div class="carousel-item">
+      <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>2</h1></div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--end of the video-->
+ 
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+</center>
+    </div>
+
+    <div class="col-md-6 px-1 mt-2 ">
+<center>
+     <div class="card custom m-p" id="c2" style="width:80%">
+      <div class="video-area">
+
+<!--slider-->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="video-item1  bg-dark text-white pt-5 pb-5"><h1>4</h1></div>
+    </div>
+    <div class="carousel-item">
+     <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>3</h1></div>
+    </div>
+    <div class="carousel-item">
+      <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>2</h1></div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--end of the video-->
+ 
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+</center>
+    </div>
+
+  
+ <div class="col-md-6 px-1 mt-2"><center>
+     <div class="card custom m-n " id="c3" style="width:80%">
+      <div class="video-area">
+
+<!--slider-->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="video-item1  bg-dark text-white pt-5 pb-5"><h1>4</h1></div>
+    </div>
+    <div class="carousel-item">
+     <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>3</h1></div>
+    </div>
+    <div class="carousel-item">
+      <div class="video-item1 bg-dark text-white pt-5 pb-5"><h1>2</h1></div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--end of the video-->
+ 
+  <div class="card-body">
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+
+</center>
+    </div>
+
+
+  </div> 
+</div> </div>
+</body> 
+</html>  
