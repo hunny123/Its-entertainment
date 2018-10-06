@@ -2,6 +2,29 @@ body{
 	background-color: #EDE8E8!important;
 	
 }
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:grey; 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background:hotpink ; 
+}
+::-webkit-scrollbar-track:hover {
+    background:purple; 
+
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:#45C4D8 ; 
+}
 .text-purple{
   color:purple;
 }	
@@ -28,7 +51,8 @@ body{
 	background-color:rgba(255,255,255,0.2);
 }
 .navbar-toggler{
-	background-image:url('menu1.png');
+	background-image:url('menu.png');
+	background-size:100%;
 }
 .dropdown-menu{
 	background-color:#7D13A8 !important;
