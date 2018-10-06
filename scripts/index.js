@@ -27,7 +27,7 @@
         $("#c2 .carousel-indicators").append(`<li data-target="#c2" data-slide-to=${i} class=${k}></li>`)
     }
     })
-    $.getJSON("https://www.googleapis.com/youtube/v3/search?q=latest game&maxResults=4&type=horror&key=AIzaSyCMlR6u_1n1nvEXH7rw6BpLhS_Rb7Agv8k&part=snippet", function(b) {
+    $.getJSON("https://www.googleapis.com/youtube/v3/search?q=latest game trailer&maxResults=5&type=horror&key=AIzaSyCMlR6u_1n1nvEXH7rw6BpLhS_Rb7Agv8k&part=snippet", function(b) {
       let k =""
     for(var i=0 ; i<b.items.length;i++){
       if(i===0){
