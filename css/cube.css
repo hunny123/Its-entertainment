@@ -1,0 +1,103 @@
+.wrap{
+   
+  perspective: 1120px;
+  perspective-origin: 50% 100%;
+ 
+}
+.relative{
+      position: absolute;
+      bottom:1%;
+      margin:none; 
+      font-size: 18px;
+       margin-top: 10px;
+     text-decoration: none;
+    color: hotpink;
+    background: #EDE8E8;
+    box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.5);
+}
+ 
+
+
+.cube {
+  
+  width: 280px;
+  transform-style: preserve-3d;
+  margin-top: 70px;
+}
+.cube div {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  
+  
+  background-color:black;
+
+}
+.back {
+  transform: translateZ(-140px) rotateY(180deg);
+
+}
+.right {
+  transform: rotateY(-270deg) translateX(140px);
+  transform-origin: top right;
+
+}
+.left {
+  transform: rotateY(270deg) translateX(-140px);
+  transform-origin: center left;
+  
+
+}
+.top {
+  transform: rotateX(-90deg) translateY(-140px);
+  transform-origin: top center;
+
+}
+.bottom {
+   transform: rotateX(90deg) translateY(140px);
+   transform-origin: bottom center;
+
+}
+.front {
+  transform: translateZ(140px);
+
+}
+.cube{
+animation: animation 12s infinite linear 1.5s  ;}
+@keyframes animation{
+
+
+50%{transform:rotateY(90deg);}
+50%{ transform:rotateY(180deg);}
+50%{ transform:rotateY(270deg);}
+50%{ transform:rotateY(360deg);}
+}
+.cube:hover {
+    
+    animation-play-state: paused;
+  }
+
+.cube img{
+width:280px;
+height:280px;}
+.alternate-way {
+  display:none;
+}
+.alternate-way img{
+  height:350px;
+
+}
+
+@media screen and (max-width:1060px) {
+    .cube,.cube div{
+      display:none;
+    }
+    .alternate-way{
+      display:block;
+    }
+    .relative{
+     
+     position:static;
+    }
+
+}

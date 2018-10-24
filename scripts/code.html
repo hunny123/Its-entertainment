@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>
+        The Timer
+    </title>
+    <style>
+        h1 {
+            font-family: "American Typewriter";
+            font-size: 72;
+            text-align: center;
+            color: brown;
+            padding-top: 150px;
+        }
+        button {
+            background-color: darkslateblue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        div{
+            padding-left: 550px;
+        }
+    </style>
+</head>
+<body>
+<input type="number" id="getTimer" style="font-size: 36px">
+<h1  id="timer">Timer is stopped</h1>
+<div>
+    <button onclick="startWatch()"> Start</button>
+    <button onclick="stopwatch()">Stop</button>
+    <!--<button onclick="stopwatch()">Pause</button>-->
+</div>
+
+<script>
+    
+    let myTimer;
+    function startWatch() {
+        let milisec =document.getElementById('getTimer').value;
+        myTimer = setInterval(function(){
+            milisec--;
+            document.getElementById('timer').innerHTML=milisec;
+            if(milisec == 0) {
+                clearInterval(myTimer);
+                document.getElementById('timer').innerHTML="Timer is stopped";
+            }
+        }, 100);
+    }
+function stopwatch() {
+    clearInterval(myTimer);
+    document.getElementById('timer').innerHTML="Timer is paused";
+}
+
+
+</script>a
+</body>
+</html>

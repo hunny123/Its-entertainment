@@ -2,6 +2,23 @@ body{
 	background-color: #EDE8E8!important;
 	
 }
+
+.download-buttons {
+      font-size: 18px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: hotpink;
+      background: #EDE8E8;
+      box-shadow: 0px 6px 5px -1px rgba(50, 50, 50, 0.5);
+
+    }
+  .download-buttons:hover {
+      box-shadow: none;
+    }
+   
+
+
+
 ::-webkit-scrollbar {
     width: 11px;
 }
@@ -29,7 +46,7 @@ body{
   color:purple;
 }	
 .nav-setting{
-	background-color:#7D13A8;
+	
 	-webkit-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
    -moz-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
    box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.5);
@@ -69,7 +86,9 @@ body{
 	
 
 }
-
+.icon-size{
+	font-size:100px !important;
+}
 
 .backy{
 	margin-top:25%;
@@ -78,4 +97,19 @@ body{
 .header1{
 	margin-top:15%;
 	margin-left:13%;
+}
+.color1{
+	background-color: purple !important;
+
+}
+.color2{
+	background-color: black;
+
+}
+.partner a{
+	color:white;
+	text-decoration: none!important;	
+}
+.partner a:hover{
+	color:white;
 }

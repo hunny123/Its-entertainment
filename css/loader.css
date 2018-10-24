@@ -1,0 +1,79 @@
+#loader{ 
+        content:"Entertainment";
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate3d(-50%,-50%,-12px);
+		width:300px;
+		height:300px;
+		text-align: center;
+		color:white;
+		text-decoration:none;
+		line-height: 300px;
+		box-sizing: border-box;
+		background:linear-gradient(90deg,red,purple,#f441a5,#ffeb3b,red);
+		background-size:400%;
+		border-radius:200px;
+
+		z-index:1;
+		font-size:24px;
+		animation:animate 12s linear infinite;
+
+
+	}
+	
+	#loader-div{
+		position:relative;
+		height:700px;
+		width:100%;
+		background:lightgrey;
+	}
+  @keyframes animate{
+		0%{
+			border-radius:200px;
+			background-position:0%;
+			font-size: 28px;
+
+			
+		 }
+		 
+		25%{
+			border-radius:150px;
+			background-position:0%;
+			font-size: 24px;
+			
+		}
+		75%{
+			border-radius:100px;
+			background-position:400%;
+			font-size: 28px;
+			
+		 }
+		 
+		100%{
+			border-radius:150px;
+			background-position:400%;
+	      		
+	      		font-size: 24px;
+		}
+
+	}
+	
+	#loader:after{
+		content:"";
+		position:absolute;
+		top:2px;
+		left:2px;
+		right:2px;
+		bottom:2px;
+		border-radius:204px;
+		z-index:-2;
+        background: linear-gradient(90deg,purple,#f441a5,#ffeb3b,#39a9f4,red,purple);
+		background-size:400%;
+		filter: blur(104px);
+		opacity:1;
+		
+		
+
+	}
+	
