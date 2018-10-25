@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Entertainment</title>
+     
+	<link rel="icon" href="./images/icon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="./scripts/video.js"></script>
+
+<!--Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style type="text/css">
+.search,input[type="file"] {
+	width:70%;
+	height:35px;
+	border:none;
+	
+
+}
+.search:focus{
+	outline:none;
+}
+
+	
+.absolute{
+	position: absolute;
+	top: 0px;
+	background-color: transparent;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index:-1;
+}
+nav{
+	background-color: rgba(10,10,10,.5);
+}
+.j1-400{
+	box-shadow: -1px -2px 19px 5px rgba(213,153,219,1);
+	height: 500px;
+	margin-top:120px;
+	border-radius:5px;
+	background-color:rgba(110, 16, 150,0.9);
+}
+.main-body{
+
+	margin:0;
+
+
+}
+.search-box{
+	
+	height:300px;
+}
+.close1 {
+  display:none;
+  margin-top: -10%;
+}
+
+</style>
+</head><body>
+	
+<video autoplay muted loop id="myVideo">
+  <source src="bgv.mp4" type="video/mp4">
+</video>
+ <nav class="navbar navbar-expand-md fixed-top nav-setting ">
+      <!-- Brand -->
+      <a class="navbar-brand ml-4" href="about.html"><img class="animated infinite pulse" src="./images/logo.png" alt="Logo" style="width:80px;height:50px"></a>
+
+      <button class="navbar-toggler  p-4" id="burger" type="button"  data-toggle="collapse" data-target="#collapsibleNavbar">
+    
+  </button>
+      <div class="collapse   navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto  ">
+          <li class="nav-item pr-3">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item pr-3">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item pr-3 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Menu
+      </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="movies.html">Movies</a>
+              <a class="dropdown-item" href="music.html">Music</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
+              <a class="dropdown-item" href="game.Html">Game</a>
+              <a class="dropdown-item" href="more.html">More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+
+
+<div class="container j1-400  ">
+	<div class="jumbotron  bg-transparent">
+		<div class="row">
+        <div class="col-lg-8 mx-auto pt-5 search-box" id="search-box">
+        	<h2 class="text-center text-white">Search your Favorite Videos</h2>
+        	<center>
+        		<div class="p-3 bg-light mt-5 " style="width:80%"><i class="fa fa-search"></i>
+            <input type="text" class="search bg-light ml-2" id="search" placeholder="Enter the name of the video">
+            <button class="search-click btn-basic btn p-2 ml-2" id="search-click">Search</button>		
+        	</div>
+           </center>
+        </div>
+       </div>
+
+   </div></div>
+ 
+
+   <div class="container-fluid pt-2 pb-2 mt-5 bg-light main-body">
+    
+   	<div class="search-result-parent" id="search-result-parent">
+     
+   </div>
+   <center><button id="goback" class="btn btn-danger p-2 close1">Go back </button></center>
+ 	   <div class="jumbotron  mb-1 bg-light	">
+       	<h2 class="text-purple text-center  mt-1">Trending Videos</h2>
+       	<div class="row " id="trending-music" class="mt-2">
+       	</div>
+   </div>
+
+
+
+</div>
+<div class="container j1-400  ">
+	<div class="jumbotron  bg-transparent">
+		<div class="row">
+        <div class="col-lg-8 mx-auto pt-5 search-box" id="upload-box">
+        	<h2 class="text-center text-white">Upload your  created videos </h2>
+        	<center>
+        		<div class="p-3 bg-light mt-5 " style="width:70%"><i class="fa fa-upload"></i>
+            <input type="file" class="search bg-light ml-2" id="upload" placeholder="upload the file">
+            <button class="search-click btn-basic btn p-2 ml-2" id="upload-click">upload</button>		
+        	</div>
+           </center>
+           <h4 class="text-center mt-3 text-white">Videos Upload by you was authorise under your name but uploading this video here gives us right to present on our website ,another people can view or download the video upload by you</h4>
+        </div>
+       </div>
+
+   </div></div>
+    <div class="container-fluid pt-2 mt-3  pb-5  bg-dark contact-footer ">
+<div class="px-2 jumbotron pb-2 mt-0 text-white bg-transparent " id="contact">
+<h1 class="text-center mb-4"> Stuck Somewhere Ask For Help</h1>
+
+<div class="row mt-3 pt-2">
+<div class="col-md-1"></div>
+<div class="col-md-5 text-center mr-2 " >
+  <h5> <i class="fa icon-size2 fa-phone"></i></h5>
+  <p> 9898987547</p>
+  <h5><a href="https://www.google.nl/maps/dir/52.2894701,4.9566825/Avalon+Bowery+Place,+11+E+1st+St,+New+York,+NY+10003,+United+States/@40.7667874,-75.1144949,7z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25984f9fa3ad3:0x757979214557dec6!2m2!1d-73.991746!2d40.7243067" target="blank"> <i class="fa icon-size2 fa-map-marker"></i></a></h5>
+  <p> Avalon Bowery Place, 11 E 1st St, New York, NY 10003, USA</p>
+  <h5><i class="fa fa-envelope-open icon-size2"></i></h5>
+  <p> Itsentertainment@gmail.com</p>
+  <p class="mt-5">
+  <i class="fa fa-facebook  social-icon"></i>
+  <i class="fa fa-twitter  social-icon"></i>
+  <i class="fa fa-google-plus  social-icon"></i>
+  <i class="fa fa-linkedin  social-icon"></i><p>
+</div><div class="col-md-5">
+  
+  
+  <div class="contact px-1 py-4 mt-4 " >
+    <h4 class="text-center text-purple pb-2"> Leave the Message </h4>
+<form class="mt-2 ml-2">
+<input type="text" placeholder="Name" style="margin-right:0.4%" class="pl-2">  
+ <input type="email" placeholder="Email"style="margin-left: 1.2%" class="pl-2">
+
+ <br>
+<textarea placeholder="Your Question" ></textarea>
+<button class="btn btn-danger text-white py-3 "style="width:95.8%">Submitt</button>
+</form></div></div>
+ 
+</div>
+<center>
+        <div class="mt-5"><img class="animated infinite pulse" src="./images/logo.png" alt="Logo" style="width:100px;height:70px">
+          <h3 class=" mt-1 wow fadeInDown" data-wow-delay="0.2s">All rights reserved</h3>
+
+  </div>
+      </center>
+      <h4 class=" text-center mt-3 wow fadeInDown" data-wow-delay="0.2s">Made With <i class="fa wow pulse  infinite text-danger animated fa-heart"></i> by Hunny</h4>
+
+</div>
+</div>
+
+  
+</div>
+
+
+  <script>
+    k=0
+        $("#burger").click(function(){
+          $(".navbar").delay(300).toggleClass("color2")
+        })
+        $(window).scroll(function() {
+        if ($(document).scrollTop() > 80) {
+        $(".navbar").delay(300).addClass("color1")
+        } else {
+       $(".navbar").delay(300).removeClass("color1")
+     }
+  });
+
+
+
+
+  </script>
+
+
+</body>
+</html>

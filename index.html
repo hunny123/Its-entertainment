@@ -8,12 +8,12 @@
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./css/loader.css">
   <link rel="stylesheet" type="text/css" href="./css/cube.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
   <!-- JQuery -->
   <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -144,15 +144,19 @@
    
   </style>
   <script>
-    window.onload=function(){
+    $(document).ready(function(){
       console.log("true");
-      $(".body-1").html("");
-      $(".body-2").show(1000);
-      $("body").css("overflow", "visible");
+
+      $(".body-1").delay(4000).hide(100);
+      $(".body-2").delay(4880).show(1000);
+      setTimeout(function(){
+       $("body").css("overflow", "visible"); 
+     },5000)
       
+       remove()
 
 
-    }
+    })
     function remove(){
       $(".navbar").delay(300).removeClass("bg-dark")
     }
@@ -170,7 +174,7 @@
 </div>
 
 
-<div class="body-2" onload="remove()">
+<div class="body-2" >
   <div class="container-fluid cf">
     <nav class="navbar navbar-expand-md fixed-top nav-setting" >
       <!-- Brand -->
@@ -197,11 +201,11 @@
         Menu
       </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="Movies.html">Movies</a>
-              <a class="dropdown-item" href="Music.html">Music</a>
-              <a class="dropdown-item" href="Videos.html">Videos</a>
-              <a class="dropdown-item" href="Game.Html">Game</a>
-              <a class="dropdown-item" href="More.html">More</a>
+              <a class="dropdown-item" href="movies.html">Movies</a>
+              <a class="dropdown-item" href="music.html">Music</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
+              <a class="dropdown-item" href="game.Html">Game</a>
+              <a class="dropdown-item" href="more.html">More</a>
             </div>
           </li>
         </ul>
@@ -213,7 +217,7 @@
       <div class="row pt-5">
         <div class="col-sm-6  col-back">
           <div class="header1">
-            <h1 class="text-white h-responsive   p-2"> It's Entertainment...</h1>
+            <h1 class="text-white h-responsive text-center animated pulse infinite  p-2"> It's Entertainment...</h1>
           </div>
         </div>
         <div class="col-sm-6 ">
@@ -234,17 +238,17 @@
             <h4 class="text-white mt-1">Watch the Hd Videos</h4>
           </center>
         </div>
-        <div class="col-sm-3 wow fadeInDown mt-2 " data-wow-delay="0.8s">
+        <div class="col-sm-3 wow fadeInDown mt-2 " data-wow-delay="0.6s">
           <center><img src="./images/music.png" class="">
             <h4 class="text-white mt-1">Listen great Music</h4>
           </center>
         </div>
-        <div class="col-sm-3 mt-2 wow fadeInDown " data-wow-delay="1.0s">
+        <div class="col-sm-3 mt-2 wow fadeInDown " data-wow-delay="0.6s">
           <center><img src="./images/game.png" width="128">
             <h4 class="text-white mt-1">Play cool games</h4>
           </center>
         </div>
-        <div class="col-sm-3 mt-2 wow fadeInDown" data-wow-delay="1.2s">
+        <div class="col-sm-3 mt-2 wow fadeInDown" data-wow-delay="0.6s">
           <center><img src="./images/download.png" width="128">
             <h4 class="text-white mt-1">Download what you like</h4>
           </center>
@@ -253,9 +257,9 @@
     </div>
     <div class=" pad video pt-4 mt-2">
       <h2 class="text-center text-purple wow fadeInDown"> Latest Videos</h2>
-      <div class="container  px-1">
+      <div class="container  px-1" >
         <div class="row pt-2">
-          <div class="col-md-6 wow fadeInDown px-1 mt-2">
+          <div class="col-md-6 wow fadeInDown px-1 mt-2" id="main-data">
 
             <div class="card custom" style="width:80%">
               <div class="video-area">
@@ -308,7 +312,7 @@
               <div class="card-body">
                 <h4 class="card-title">Best and Latest songs</h4>
                 <p class="card-text">Update yourself with the new songs</p>
-                <a href="music.mp3" class="btn btn-primary">More Music</a>
+                <a href="music.html" class="btn btn-primary">More Music</a>
               </div>
             </div>
 
@@ -347,7 +351,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid pt-2">
+  <div class="container-fluid  pt-2">
 
     <div class="jumbotron  Quick-mp">
       <div class="container">
@@ -361,7 +365,7 @@
         </div>
 
       </div>
-      <center><a href="music.html#mp3" class="download-buttons btn p-3 mt-4"><i class="  pr-1"></i>For more mp3 &mp4</a></center>
+      <center><a href="Music.html" class="download-buttons btn p-3 mt-4"><i class="  pr-1"></i>For more mp3 &mp4</a></center>
     </div>
    
     <div class=" jumbotron hero pt-1 pb-1 game-arena">
@@ -444,16 +448,18 @@
       </div>
       
     </div>
-
+</div>
 <div class="jumbotron pt-1">
-    </div>
-  </div>
-<div class="contianer-fluid  partner pt-3 px-1 bg-dark" id="about">
+</div>
+
+  
+  <div style="padding:0px">
+<div class="container-fluid pb-3 partner pt-3 px-1 bg-dark" id="about">
    <div class="jumbotron bg-transparent">
    <h1 class="text-center text-white">Partners</h1>
    
 
-    <div class="row mt-4 px-3 text-white text-center">
+    <div class="row mt-4  px-3 text-white text-center">
       <div class="col-sm-4 mt-5 wow fadeInRight "><a href="https://developers.google.com/youtube/v3/docs/search/list" target="blank"><i class="fa   icon-size fa-youtube"></i> </a>
       <h4 class="mt-1"  > Our Data Partners </h4> </div>
       <div class="col-sm-4 wow fadeInRight mt-5"><a href="http://api.youtube6download.top/" target="blank"> <i class="fa   icon-size  fa-cubes"></i> </a>
@@ -464,24 +470,51 @@
 
 </div></div>
 
-<div class="container-fluid bg-dark pb-3 main-body" style="margin-top:-10% ">
-      <div class="jumbotron bg-dark text-white">
-        <center>
-        <div class="  "><img class="animated infinite pulse" src="./images/logo.png" alt="Logo" style="width:100px;height:70px">
-          <h3 class=" mt-4 wow fadeInDown" data-wow-delay="0.2s">All rights reserved
-</h3>
+<div class="container-fluid  pb-5  bg-dark contact-footer ">
+<div class="px-2 pb-2 mt-0 text-white bg-transparent " id="contact">
+<h1 class="text-center mb-4"> Stuck Somewhere Ask For Help</h1>
 
-            
-
-        </div>
-      </center>
-      <h4 class=" float-right mt-5 wow fadeInDown" data-wow-delay="0.2s">Made With <i class="fa wow pulse  infinite fa-heart"></i> by Hunny</h4>
-      </div>
-
-
-
-    </div>
+<div class="row mt-3 pt-2">
+<div class="col-md-1"></div>
+<div class="col-md-5 text-center mr-2 " >
+  <h5> <i class="fa icon-size2 fa-phone"></i></h5>
+  <p> 9898987547</p>
+  <h5><a href="https://www.google.nl/maps/dir/52.2894701,4.9566825/Avalon+Bowery+Place,+11+E+1st+St,+New+York,+NY+10003,+United+States/@40.7667874,-75.1144949,7z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25984f9fa3ad3:0x757979214557dec6!2m2!1d-73.991746!2d40.7243067" target="blank"> <i class="fa icon-size2 fa-map-marker"></i></a></h5>
+  <p> Avalon Bowery Place, 11 E 1st St, New York, NY 10003, USA</p>
+  <h5><i class="fa fa-envelope-open icon-size2"></i></h5>
+  <p> Itsentertainment@gmail.com</p>
+  <p class="mt-5">
+  <i class="fa fa-facebook  social-icon"></i>
+  <i class="fa fa-twitter  social-icon"></i>
+  <i class="fa fa-google-plus  social-icon"></i>
+  <i class="fa fa-linkedin  social-icon"></i></p>
+</div><div class="col-md-5">
   
+  
+  <div class="contact px-1 py-4 mt-4 " >
+    <h4 class="text-center text-purple pb-2"> Leave the Message </h4>
+<form class="mt-2 ml-2">
+<input type="text" placeholder="Name" style="margin-right:0.4%" class="pl-2">  
+ <input type="email" placeholder="Email"style="margin-left: 1.2%" class="pl-2">
+
+ <br>
+<textarea placeholder="Your Question" ></textarea>
+<button class="btn btn-danger text-white py-3 "style="width:95.8%">Submitt</button>
+</form></div></div>
+ 
+</div>
+<center>
+        <div class="mt-5"><img class="animated infinite pulse" src="./images/logo.png" alt="Logo" style="width:100px;height:70px">
+          <h3 class=" mt-1 wow fadeInDown" data-wow-delay="0.2s">All rights reserved</h3>
+
+  </div>
+      </center>
+      <h4 class=" text-center mt-3 wow fadeInDown" data-wow-delay="0.2s">Made With <i class="fa wow pulse  infinite text-danger animated fa-heart"></i> by Hunny</h4>
+
+</div>
+</div>
+  
+</div>
 </div>
 </body>
 <script>
@@ -505,7 +538,7 @@
      }
   });
         $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() > $(document).height() - $(".partner").height()+50) {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - $(".partner").height()-350) {
       $(".navbar").delay(300).addClass("bg-dark")
    }
    else{

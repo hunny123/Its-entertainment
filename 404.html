@@ -2,8 +2,38 @@
 <html>
 <head>
 	<title>	error</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.rotate{
+			transition: transform 18s;
+		
+      }
+      body{
+      	overflow-x: hidden;
+      }
+	</style>
+	<script >
+		
+		function myfunction(){
+         var x =document.getElementsByClassName('rotate');
+         
+         x[0].style.transform = "rotate(80deg)"
+
+		}
+	</script>
 </head>
-<body>
-<h1>	this is error page</h1>
+<body class="bg-dark">
+	<div class="container mt-4">
+		<div class="row ">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8 ">
+				<div class="row ">
+					<div class="col-sm-6 text-center"> <h1 class=" text-white mt-3"> Oops! Lost Soul!</h1>
+					<h3 class="text-danger mt-3 "> Error: 404  Page Not Found</h3>
+				    <a href="index.html" role="button" class="btn mt-3 btn-primary px-3 py-2"><b> Home </b></a></div>
+					<div class="col-sm-6 mt-3"> <img src="robot error.png" class="img-fluid rotate"  onload="myfunction()">	</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div></div></div>
 </body>
 </html>
