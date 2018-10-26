@@ -140,6 +140,14 @@
 
       }
     }
+    .meme{
+  
+  height:300px;
+  width: 300px;
+  background-repeat:no-repeat ;
+  background-size:cover;
+  background-position:center;   
+}
 
    
   </style>
@@ -161,7 +169,7 @@
       $(".navbar").delay(300).removeClass("bg-dark")
     }
   </script>
-
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 </head>
 
@@ -449,8 +457,47 @@
       
     </div>
 </div>
-<div class="jumbotron pt-1">
+<div class="jumbotron text-white pb-5  bg-info">
+  <h1 class="text-center"> Meme Generator</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="p-2 m-3 text-purple bg-light">
+          <div class="form-group">
+            <label for="Upload">Upload Photo</label>
+            <input type="file" class="form-control  w-100" id="photo" onchange="readURL(this);">
+
+          </div>
+
+          <div class="form-group">
+            <label for="Text">Top Text:</label>
+            <input type="text" class="form-control" id="toptext" placeholder="Enter top text ">
+          </div>
+          <div class="form-group">
+            <label for="Text">bottom Text:</label>
+            <input type="Text" class="form-control" id="bottomtext" placeholder="Enter bottom text ">
+          </div>
+
+          <button onclick="convert()" class="btn download-buttons mt-1"><i class="fa fa-download">Submit</i></button>
+        </div>
+
+      </div>
+      <div class="col-sm-5 p-2 m-2 memeimage ">
+        <center><div class="h-100 w-100 p-3 bg-light">
+          <div class="meme ml-2" id="meme">
+            
+            <h5 class="meme-top mt-0 ">Top</h5>
+            <h5 class="meme-bottom " style="margin-top:200px;">Bottom</h5>
+
+          </div>
+         </div>
+        </center>
+      </div>
+
+    </div>
+  </div>
 </div>
+
 
   
   <div style="padding:0px">

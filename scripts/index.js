@@ -50,7 +50,69 @@
 
 
 
-    })  
+    })
+
+function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                  console.log(e)
+                    $('.meme')
+                        .css('background-image', "url('"+e.target.result+"')")
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+  function ontop(){ 
+    setTimeout( function() {
+var top = $('#toptext').val();
+    },100);
+    console.log(top)
+/*if(top == "" || top.length < 4){
+alert("error");
+}*/
+$(".meme-top").text($("#toptext").val())
+}
+
+function convert() {
+
+ 
+var k=document.getElementById('meme')  
+html2canvas(k).then(function(canvas) {
+                var link = document.createElement("a");
+                $(".memeimage").append(link)
+               
+                link.download = "html_image.png";
+                link.href = canvas.toDataURL("image/png");
+                link.target = '_blank';
+                link.click();
+            });
+
+}
+
+
+
+function onbottom(){ 
+    setTimeout( function() {
+var top = $('#bottomtext').val();
+    },100);
+    console.log(top)
+/*if(top == "" || top.length < 4){
+alert("error");
+}*/
+$(".meme-bottom").text($("#bottomtext").val())
+}
+
+  $(document).ready(function(){
+   $('#toptext').on('keyup paste',ontop );
+   $('#bottomtext').on('keyup paste',onbottom);
+
+
+  })  
       
 
   
