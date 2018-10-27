@@ -1,0 +1,77 @@
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:grey; 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background:rgb(42, 30, 30) ; 
+}
+::-webkit-scrollbar-track:hover {
+    background:gray; 
+
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:#45C4D8 ; 
+}
+.text-purple{
+  color: rgb(32, 30, 30);
+}	
+.nav-setting{
+	background-color:rgb(32, 30, 30);
+	-webkit-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
+   -moz-box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.8);
+   box-shadow: 0px 6px 5px -1px rgba(50,50,50,0.5);
+   z-index:4;
+}
+.nav-setting ul{
+	margin-right:15%;
+}
+.nav-setting a{
+   color:white !important;
+   font-weight: 400;
+   font-size: 18px;
+   text-decoration: none;
+   margin:5px;
+}
+.nav-setting a:hover{
+	color:purple;
+	
+	background-color:rgba(255,255,255,0.2);
+}
+.navbar-toggler{
+	background-image:url('menu.png');
+	background-size:100%;
+}
+.dropdown-menu{
+	background-color:rgb(32, 30, 30) !important;
+	border-radius:10px !important;
+
+
+
+}
+.dropdown-menu a{
+	color:white!important;
+}
+
+.navbar-collapse {
+	
+
+}
+
+
+.backy{
+	margin-top:25%;
+
+}
+.header1{
+	margin-top:15%;
+	margin-left:13%;
+}
